@@ -1,0 +1,35 @@
+{
+  "name": "jit-parcel-ts",
+  "license": "MIT",
+  "engines": {
+    "node": ">=8.11.4 <11.0.0",
+    "npm": ">=6.1.0 <7.0.0"
+  },
+  "version": "0.3.0",
+  "scripts": {
+    "start": "npm run watch",
+    "watch": "parcel index.html -p 8080 --open",
+    "build": "rimraf dist && parcel build index.html"
+  },
+  "dependencies": {
+    "@aurelia/debug": "dev",
+    "@aurelia/jit": "dev",
+    "@aurelia/jit-html": "dev",
+    "@aurelia/jit-html-browser": "dev",
+    "@aurelia/kernel": "dev",
+    "@aurelia/runtime": "dev",
+    "@aurelia/runtime-html": "dev",
+    "@aurelia/runtime-html-browser": "dev",
+    "data": "^0.6.1",
+    "leaflet": "^1.4.0",
+    "leaflet-draw": "^1.0.4",
+    "src": "^1.1.2"
+  },
+  "devDependencies": {
+    "node-sass": "^4.11.0",
+    "parcel-bundler": "latest",
+    "rimraf": "latest",
+    "sass": "^1.17.0",
+    "typescript": "latest"
+  }
+}

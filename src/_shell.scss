@@ -1,0 +1,55 @@
+@import 'animation';
+
+#shell {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+  #shell-left-panel {
+    position: absolute;
+    height: 100%;
+    width: 5vw;
+    background: var(--bg);
+    opacity: 0.5;
+    @include animate(width, opacity);
+
+    &:hover, &:focus {
+      width: 20vw;
+      opacity: 1;
+    }
+  }
+  #shell-right-panel {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 5vw;
+    background: var(--bg);
+    opacity: 0.5;
+    @include animate(width, opacity);
+
+    &:hover, &:focus {
+      width: 20vw;
+      opacity: 1;
+    }
+  }
+  #shell-bottom-panel {
+    position: absolute;
+    width: 100%;
+    height: 5vh;
+    bottom: 0;
+    background: var(--bg);
+    opacity: 0.5;
+    @include animate(height, opacity);
+
+    &:hover, &:focus {
+      height: 40vh;
+      opacity: 1;
+    }
+  }
+  #shell-content {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+  }
+}
